@@ -21,12 +21,17 @@ repositories {
 dependencies {
     implementation 'com.google.code.gson:gson:2.10.1'
     implementation 'org.springframework:spring-web:6.0.9'
+    implementation 'org.springframework.integration:spring-integration-core:6.1.0'
+    implementation 'commons-io:commons-io:2.12.0'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.15.2'
+// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+// https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api
+    implementation 'javax.annotation:javax.annotation-api:1.3.2'
 
     implementation 'org.springframework.boot:spring-boot-starter-amqp'
     implementation 'org.springframework.boot:spring-boot-starter-integration'
     implementation 'org.springframework.boot:spring-boot-starter-jdbc'
-    implementation 'org.springframework.integration:spring-integration-amqp'
-    implementation 'org.springframework.integration:spring-integration-jdbc'
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'com.h2database:h2'
     runtimeOnly 'org.hsqldb:hsqldb'
@@ -34,6 +39,8 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.amqp:spring-rabbit-test'
     testImplementation 'org.springframework.integration:spring-integration-test'
+    testImplementation 'org.assertj:assertj-core:3.24.2'
+
 }
 
 tasks.named('test') {

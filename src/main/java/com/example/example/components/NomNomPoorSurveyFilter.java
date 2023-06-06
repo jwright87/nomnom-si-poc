@@ -1,6 +1,6 @@
 package com.example.example.components;
 
-import com.example.example.model.Survey;
+import com.example.example.model.odr.OdrTask;
 import lombok.AllArgsConstructor;
 import org.springframework.integration.annotation.Filter;
 import org.springframework.messaging.Message;
@@ -16,7 +16,7 @@ public class NomNomPoorSurveyFilter {
     private Integer minPoints;
 
     @Filter
-    public boolean filterPoorSurveys(Message<Survey> msg) {
+    public boolean filterPoorSurveys(Message<OdrTask> msg) {
 
         var survey = msg.getPayload();
 

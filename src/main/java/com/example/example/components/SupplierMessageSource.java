@@ -33,7 +33,7 @@ public class SupplierMessageSource implements MessageSource<String> {
             var responseEntity =
                     restTemplate.getForEntity(new URI(sourceUrl),String.class);
             return MessageBuilder.withPayload(responseEntity.getBody())
-                    .setHeader("Origin",origin).build();
+                    .setHeader("ORIGIN",origin).build();
         } catch (Exception e) {
             throw new RuntimeException("Failed to read message from " + origin);
         }
