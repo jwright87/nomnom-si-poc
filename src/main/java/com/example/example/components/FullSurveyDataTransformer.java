@@ -23,7 +23,9 @@ public class FullSurveyDataTransformer {
         var repdataTask = msg.getPayload();
         var odrTask = new OdrTask();
         odrTask.setLoi(repdataTask.getLengthOfInterview());
-        odrTask.set(repdataTask.getCPI());
+//        odrTask.set(repdataTask.getCPI());
+        //TODO call external http service
+        return MessageBuilder.withPayload(odrTask).copyHeaders(msg.getHeaders()).build();
     }
 
 

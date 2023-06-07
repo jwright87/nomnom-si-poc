@@ -8,7 +8,6 @@ import lombok.Data;
 
 @Data
 @Generated("net.hexar.json2pojo")
-@SuppressWarnings("unused")
 public class RepdataTask {
 
     @SerializedName("AccountName")
@@ -64,36 +63,4 @@ public class RepdataTask {
     @SerializedName("TotalRemaining")
     private Integer totalRemaining;
 
-
-    @Override
-    public String toString() {
-        return "RepdataTask2{" +
-                "accountName='" + accountName + '\'' +
-                ", bidIncidence=" + bidIncidence +
-                ", bidLengthOfInterview=" + bidLengthOfInterview +
-                ", cPI=" + cPI +
-                ", collectsPII=" + collectsPII +
-                ", completionPercentage=" + completionPercentage +
-                ", conversion=" + conversion +
-                ", countryLanguageID=" + countryLanguageID +
-                ", fieldEndDate='" + fieldEndDate + '\'' +
-                ", industryID=" + industryID +
-                ", isOnlySupplierInGroup=" + isOnlySupplierInGroup +
-                ", isTrueSample=" + isTrueSample +
-                ", lengthOfInterview=" + lengthOfInterview +
-                ", overallCompletes=" + overallCompletes +
-                ", sampleTypeID=" + sampleTypeID +
-                ", studyTypeID=" + studyTypeID +
-                ", surveyGroup=" + surveyGroup +
-                ", surveyGroupExists=" + surveyGroupExists +
-                ", surveyGroupID=" + surveyGroupID +
-                ", surveyMobileConversion=" + surveyMobileConversion +
-                ", surveyName='" + surveyName + '\'' +
-                ", surveyNumber=" + surveyNumber +
-                ", surveyQuotaCalcTypeID=" + surveyQuotaCalcTypeID +
-                ", surveySID='" + surveySID + '\'' +
-                ", terminationLengthOfInterview=" + terminationLengthOfInterview +
-                ", totalRemaining=" + totalRemaining +
-                '}';
-    }
 }

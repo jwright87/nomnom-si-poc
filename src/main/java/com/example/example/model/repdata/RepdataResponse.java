@@ -9,7 +9,6 @@ import lombok.Data;
 
 @Data
 @Generated("net.hexar.json2pojo")
-@SuppressWarnings("unused")
 public class RepdataResponse {
 
     @SerializedName("AccountCode")
