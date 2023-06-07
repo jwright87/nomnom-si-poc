@@ -1,6 +1,6 @@
 package com.example.example.components;
 
-import com.example.example.model.odr.OdrTask;
+import com.example.example.model.OdrTask;
 import lombok.AllArgsConstructor;
 import org.springframework.integration.annotation.Filter;
 import org.springframework.messaging.Message;
